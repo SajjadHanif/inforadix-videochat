@@ -44,7 +44,7 @@
 
 <!--            <input type='text' class='username-input' id='username-room-one' autocomplete='off' maxlength='16' placeholder='Please enter username'>-->
 
-            <a onClick="location.hash = this.hash; location.reload()" href="#2_MX40NDY4NjI5Mn5-RnJpIE1hciAyOCAwOTozMjo1MiBQRFQgMjAxNH4wLjQxNzg3MjZ-">
+            <a onClick="location.hash = this.hash; location.reload()" href="#MX40NDY4">
 
                 <div class='button-div' id='join-room-one'><i class='fa fa-bolt'></i> join</div>
 
