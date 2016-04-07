@@ -20,7 +20,7 @@ function startSession(){
     var session = OT.initSession(apiKey, sessionId);
 
     session.on("streamCreated", function(event) {
-        session.subscribe(event.stream);
+        session.subscribe(event.stream,'subscriber');
     });
 
     session.connect(token, function(error) {
