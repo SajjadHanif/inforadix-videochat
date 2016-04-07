@@ -24,7 +24,7 @@ function startSession(){
     });
 
     session.connect(token, function(error) {
-        publisher = OT.initPublisher('player-div', {name: "sajjad", insertMode: 'append'});
+        publisher = OT.initPublisher('publisher', {name: "InfoRadix Consultancy", insertMode: 'append'});
         session.publish(publisher);
     });
 
