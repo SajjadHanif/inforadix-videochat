@@ -31,7 +31,7 @@
 <body>
 
     <div id='header'>
-        <a href=''><h1><i class='fa fa-group'></i> InfoRadx VideoChat prototype</h1></a>
+        <a href=''><h1><i class='fa fa-group'></i> InfoRadix Video Conference</h1></a>
     </div>
 
     <div class='content' id='choose-room'>
@@ -40,11 +40,11 @@
 
         <div class='room-div'>    
 
-            <div class="room-title-div">InfoRadix Talk</div>
+            <div class="room-title-div">InfoRadix Gossip</div>
 
-<!--            <input type='text' class='username-input' id='username-room-one' autocomplete='off' maxlength='16' placeholder='Please enter username'>-->
+            <!--<input type='text' class='username-input' id='username' autocomplete='off' maxlength='16' placeholder='Please enter username'>-->
 
-            <a onClick="location.hash = this.hash; location.reload()" href="#MX40NDY4">
+            <a onClick="location.hash = this.hash; location.reload()" href="#MX40NDY4NjI5Mn5">
 
                 <div class='button-div' id='join-room-one'><i class='fa fa-bolt'></i> join</div>
 
@@ -58,12 +58,15 @@
 
         <h2>room started</h2>
 
-        <div id='player-div'></div>
+        <div id="publisher-div"></div>
+        <div id="subscriber-div"></div>
 
     </div>
 
 </body>
 
 <script src="javascript.js"></script>
+
+<!--<a href="javascript:resizePublisher()">Style</a>-->
 
 </html>

@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function(){
         $('#session-room').addClass('session-room-active');
 
         startSession(); 
+
     }
 })
 
@@ -20,13 +21,23 @@ function startSession(){
     var session = OT.initSession(apiKey, sessionId);
 
     session.on("streamCreated", function(event) {
-        session.subscribe(event.stream,'subscriber');
+        session.subscribe(event.stream,'subscriber-div',{
+            name: 'Inforadix', 
+            insertMode: 'append',
+         });
+
     });
 
     session.connect(token, function(error) {
-        publisher = OT.initPublisher('publisher', {name: "InfoRadix Consultancy", insertMode: 'after'});
-        session.publish(publisher);
+        
+        publisher = OT.initPublisher('publisher-div',{ 
+            name: 'Inforadix', 
+            insertMode: 'append',  
+         });
+     
+    session.publish(publisher);
     });
+    
 
 }
 
@@ -34,6 +45,13 @@ $(window).resize(function() {
     console.log('INNERWIDTH: ' + window.innerWidth);
 });
 
+function resizePublisher() {
+        //publisher.element.style.width = "500px";
+        //publisher.element.style.height = "500px";
+        publisher.element.style.border = '5px solid blue';
+        publisher.element.style.float = 'left';
+    }
+ 
 //$('#join-room-one').click(function(){
 //    console.log('CLICKED');
 //    if(!$('#username-room-one').val()){

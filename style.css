@@ -102,8 +102,19 @@ line-height: 0;
     display:block;
 }
 
-#player-div{
-    margin:0 auto;   
+/*#player-div{
+    margin:0 auto;  
+}*/
+
+#publisher-div{
+    float: left;
+    margin-right: 20px;
+    border: 5px solid black;
+}
+#subscriber-div{
+    float: left;
+    margin-right: 20px;
+    border: 5px solid black;
 }
 
 .username-input{
